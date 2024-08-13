@@ -1,0 +1,115 @@
+### // View team info
+GET http://localhost:5279/players/view/team-info
+
+### // View all players
+GET http://localhost:5279/players/view
+
+### // View single player at id
+GET http://localhost:5279/players/view/1
+
+### // Draft player
+POST http://localhost:5279/players/sign
+Content-Type: application/json
+
+{
+    "name": "Bronny James Jr",
+    "team": "USC",
+    "age": 19,
+    "height": "6'2",
+    "ppg": 4.3,
+    "contractSalary": 1
+}
+
+### // Single Trade
+PUT http://localhost:5279/players/trade/1
+Content-Type: application/json
+
+{
+    "name": "Klay Thompson",
+    "team": "Golden State Warriors",
+    "age": 34,
+    "height": "6'6",
+    "ppg": 19.8,
+    "contractSalary": 65
+}
+
+###  // Release player
+DELETE http://localhost:5279/players/release/1
+
+### // Trade Package
+POST http://localhost:5279/players/sign
+Content-Type: application/json
+
+{
+    "name": "Klay Thompson",
+    "team": "Golden State Warriors",
+    "age": 34,
+    "height": "6'6",
+    "ppg": 19.8,
+    "contractSalary": 15
+}
+
+
+###
+POST http://localhost:5279/players/sign
+Content-Type: application/json
+
+{
+    "name": "D'Angelo Russell",
+    "team": "Los Angeles Lakers",
+    "age": 28,
+    "height": "6'4",
+    "ppg": 17.8,
+    "contractSalary": 19
+}
+###
+POST http://localhost:5279/players/sign
+Content-Type: application/json
+
+{
+    "name": "Austin Reaves",
+    "team": "Los Angeles Lakers",
+    "age": 26,
+    "height": "6'5",
+    "ppg": 12.4,
+    "contractSalary": 13
+}
+
+###
+POST http://localhost:5279/players/sign
+Content-Type: application/json
+
+{
+    "name": "LeBron James",
+    "team": "Los Angeles Lakers",
+    "age": 39,
+    "height": "6'9",
+    "ppg": 27.1,
+    "contractSalary": 49
+}
+
+###
+POST http://localhost:5279/players/sign
+Content-Type: application/json
+
+{
+    "name": "Rui Hachimura",
+    "team": "Los Angeles Lakers",
+    "age": 26,
+    "height": "6'8",
+    "ppg": 12.7,
+    "contractSalary": 17
+}
+       
+###
+POST http://localhost:5279/players/sign
+Content-Type: application/json
+
+{
+    "name": "Anthony Davis",
+    "team": "Los Angeles Lakers",
+    "age": 31,
+    "height": "6'9",
+    "ppg": 24.1,
+    "contractSalary": 43
+}
